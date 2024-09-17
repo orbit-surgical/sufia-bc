@@ -6,7 +6,7 @@
         content="SuFIA-BC">
   <meta name="keywords" content="SuFIA-BC">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>SuFIA-BC</title>
+  <title>SuFIA-BC: Generating High Quality Demonstration Data for Visuomotor Policy Learning in Surgical Subtasks</title>
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-4M77Z4154P"></script>
@@ -72,19 +72,38 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-2 publication-title">SuFIA-BC</h1>
+          <h1 class="title is-2 publication-title">SuFIA-BC: Generating High Quality Demonstration Data for Visuomotor Policy Learning in Surgical Subtasks</h1>
           <div class="is-size-5 publication-authors">
-            <!-- <span class="author-block">
-              <a href="https://masoudmoghani.com/">Masoud Moghani</a><sup>1</sup>,</span> -->
+            <span class="author-block">
+              <a href="https://masoudmoghani.com/">Masoud Moghani</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="https://developer.nvidia.com/blog/author/nigeln/">Nigel Nelson</a><sup>2</sup>,</span>
+              <span class="author-block">
+                <a href="https://www.linkedin.com/in/mohghanem">Mohamed Ghanem</a><sup>3</sup>,</span>
+              <span class="author-block">
+                <a href="https://uk.linkedin.com/in/diazandr3s">Andres Diaz-Pinto</a><sup>2</sup>,</span>
+              <span class="author-block">
+                <a href="https://www.linkedin.com/in/kush-hari">Kush Hari</a><sup>4</sup>,</span><br>
+              <span class="author-block">
+                <a href="https://www.linkedin.com/in/mahdiazizian">Mahdi Azizian</a><sup>2</sup>,</span>
+              <span class="author-block">
+                <a href="https://goldberg.berkeley.edu/">Ken Goldberg</a><sup>4</sup>,</span>
+              <span class="author-block">
+                <a href="https://developer.nvidia.com/blog/author/shuver/">Sean Huver</a><sup>2</sup>,</span>
+              <span class="author-block">
+                <a href="https://animesh.garg.tech/">Animesh Garg</a><sup>1,2,3</sup></span>
           </div>
 
           &nbsp;
 
           <div class="is-size-5 publication-authors">
-            <!-- <span class="author-block"><sup>1</sup>University of Toronto,</span> -->
+            <span class="author-block"><sup>1</sup>University of Toronto,</span>
+            <span class="author-block"><sup>2</sup>NVIDIA,</span>
+            <span class="author-block"><sup>3</sup>Georgia Institute of Technology,</span>
+            <span class="author-block"><sup>4</sup>University of California, Berkeley</span><br>
           </div>
 
-          &nbsp;
+          <!-- &nbsp; -->
  
           <div class="column has-text-centered">
             <div class="publication-links">
@@ -139,12 +158,17 @@
 
 <section class="hero teaser">
   <div class="container is-max-desktop">
-    <div class="hero-body">
-      <img class="img-responsive img-rounded" src="./static/images/Teaser.png" alt="" width="800" >
-<!--       
-      <h2 class="subtitle has-text-centered">
-
-      </h2> -->
+    <div class="hero-body has-text-centered">
+      <img class="img-responsive img-rounded" src="./static/images/Teaser.svg" alt="" width="800" >
+      
+      <h2 class="subtitle">
+        <b>Overview:</b> (a) Photorealistic human anatomical organs and textures in
+        <a href="https://orbit-surgical.github.io/">ORBIT-Surgical</a>.<br>
+        (b-f) Visuomotor behavior cloning policies performing fine-grained robotic maneuvers
+        performed during surgery and the hands-on training exercises used in tabletop
+        surgical curricula: (b) Tissue Retraction, (c) Needle Lift, (d) Needle Handover,
+        (e) Suture Pad, (f) Block Transfer.
+      </h2>
 
     </div>
   </div>
@@ -159,7 +183,23 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            
+            Behavior cloning can facilitate learning of dexterous manipulation skills,
+            yet the complexity of surgical environments, the difficulty and expense of
+            obtaining patient data, and robot calibration errors present unique challenges
+            for surgical robot learning. We provide an enhanced surgical digital twin with
+            photorealistic human anatomical organs, integrated into a comprehensive simulator
+            designed to generate high-quality synthetic data for solving fundamental tasks in
+            surgical autonomy. We present SuFIA-BC: exploring visual Behavior Cloning policies
+            for Surgical First Interactive Autonomy Assistants. We investigate visual observation
+            spaces including multi-view cameras and 3D visual representations extracted from a
+            single endoscopic camera view. Through systematic evaluation, we find that the
+            diverse set of photorealistic surgical tasks introduced in this work enable the
+            nuanced evaluation of prospective behavior cloning models for the unique challenges
+            posed by surgical environments. We observe that current state-of-the-art behavior cloning
+            techniques struggle to solve the contact-rich and complex tasks evaluated in this work,
+            regardless of their underlying perception or control architectures. These findings
+            underscore the importance of tailoring perception pipelines and control architectures,
+            as well as larger scale synthetic datasets tailored to the specific demands of surgical tasks.
           </p>
         </div>
       </div>
@@ -181,6 +221,29 @@
 </section>
 
 
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <!-- Surgical Digital Twin. -->
+    <h2 class="title is-3">Surgical Digital Twin</h2>
+    <div class="content has-text-centered">
+      <img class="img-responsive img-rounded" src="./static/images/DigitalTwin.svg" alt="" width="800">
+    </div>
+    <div class="content has-text-justified">
+      <p>
+        This workflow illustrates the full pipeline for creating photorealistic anatomical models,
+        from raw CT volume data to final OpenUSD in Nvidia Omniverse. The process includes organ
+        segmentation, mesh conversion, mesh cleaning and refinement, photorealistic texturing,
+        and culminating into a unified OpenUSD.
+      </p>
+    </div>
+    <!-- Surgical Digital Twin. -->
+
+  </div>
+</section>
+
+
+
 <!-- <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
@@ -197,10 +260,10 @@
          href="mailto:moghani@cs.toronto.edu">
         <i class="fa fa-envelope"></i>
       </a>
-      <a class="icon-link"
-         href="https://arxiv.org/pdf/2404.16027">
+      <!-- <a class="icon-link"
+         href="">
         <i class="fas fa-file-pdf"></i>
-      </a>
+      </a> -->
       <a class="icon-link" href="https://github.com/orbit-surgical/orbit-surgical" class="external-link" disabled>
         <i class="fab fa-github"></i>
       </a>
