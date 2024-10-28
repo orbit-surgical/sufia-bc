@@ -108,8 +108,8 @@
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
-              <span class="link-block">
-                <a href="https://drive.google.com/file/d/1OyoRGr8wZwntHv15xxaT2jl8QRSjjd3w/view?usp=sharing"
+              <!-- <span class="link-block">
+                <a href=""
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -125,7 +125,7 @@
                   </span>
                   <span>arXiv</span>
                 </a>
-              </span>
+              </span> -->
               <!-- Video Link. -->
               <span class="link-block">
                 <a href="https://youtu.be/jCvZYf0saRo"
@@ -292,6 +292,7 @@
           <video id="Tissue-view1" autoplay muted loop playsinline height="100%">
             <source src="./static/videos/handover.mp4"
                     type="video/mp4">
+                    Your browser does not support the video tag.
           </video>
         </div>
       </div>
@@ -321,12 +322,211 @@
           <video id="Tissue-view1" autoplay muted loop playsinline height="100%">
             <source src="./static/videos/transfer.mp4"
                     type="video/mp4">
+                    Your browser does not support the video tag.
           </video>
         </div>
       </div>
 
     </div>
     <!--/ Policy Rollout. -->
+
+
+    <!-- Viewpoint Robustness. -->
+    <h2 class="title is-3">Viewpoint Robustness</h2>
+
+    <p>
+      Examples of ACT Multi-Camera models: trained on primary camera views (train) and evaluated under two perturbations:
+      minor perturbations in camera positioning (view 1) and significant changes in viewpoint (view 2).
+      It is important to note that in the multi-camera visual input, the wrist cameras maintain a consistent viewport throughout the evaluation.
+    </p>
+
+    &nbsp;
+    
+    <!-- Tissue Retraction. -->
+    <div class="columns is-centered">
+
+      <!-- train. -->
+      <div class="column">
+        <div class="content">
+          <p style="text-align: center;">(train)</p>
+          <p></p>
+          <video id="Tissue-train" autoplay muted loop playsinline height="100%">
+            <source src="./static/videos/Tissue_view_train.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+      <!-- view 1. -->
+      <div class="column">
+        <div class="content">
+          <p style="text-align: center;">(view 1)</p>
+          <p></p>
+          <video id="Tissue-view1" autoplay muted loop playsinline height="100%">
+            <source src="./static/videos/Tissue_view_1.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+      <!-- view 2. -->
+      <div class="column">
+        <div class="content">
+          <p style="text-align: center;">(view 2)</p>
+          <p></p>
+          <video id="Tissue-view2" autoplay muted loop playsinline height="100%">
+            <source src="./static/videos/Tissue_view_2.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- Needle Lift. -->
+    <div class="columns is-centered">
+
+      <!-- train. -->
+      <div class="column">
+        <div class="content">
+          <video id="Lift-train" autoplay muted loop playsinline height="100%">
+            <source src="./static/videos/Lift_view_train.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+      <!-- view 1. -->
+      <div class="column">
+        <div class="content">
+          <video id="Lift-view 1" autoplay muted loop playsinline height="100%">
+            <source src="./static/videos/Lift_view_1.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+      <!-- view 2. -->
+      <div class="column">
+        <div class="content">
+          <video id="Lift-view2" autoplay muted loop playsinline height="100%">
+            <source src="./static/videos/Lift_view_2.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- Needle Handover. -->
+    <div class="columns is-centered">
+
+      <!-- train. -->
+      <div class="column">
+        <div class="content">
+          <video id="Handover-train" autoplay muted loop playsinline height="100%">
+            <source src="./static/videos/Handover_view_train.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+      <!-- view 1. -->
+      <div class="column">
+        <div class="content">
+          <video id="Handover-view1" autoplay muted loop playsinline height="100%">
+            <source src="./static/videos/Handover_view_1.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+      <!-- view 2. -->
+      <div class="column">
+        <div class="content">
+          <video id="Handover-view2" autoplay muted loop playsinline height="100%">
+            <source src="./static/videos/Handover_view_2.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- Suture Pad. -->
+    <div class="columns is-centered">
+
+      <!-- train. -->
+      <div class="column">
+        <div class="content">
+          <video id="Suture-train" autoplay muted loop playsinline height="100%">
+            <source src="./static/videos/Suture_view_train.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+      <!-- view 1. -->
+      <div class="column">
+        <div class="content">
+          <video id="Suture-view1" autoplay muted loop playsinline height="100%">
+            <source src="./static/videos/Suture_view_1.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+      <!-- view 2. -->
+      <div class="column">
+        <div class="content">
+          <video id="Suture-view2" autoplay muted loop playsinline height="100%">
+            <source src="./static/videos/Suture_view_2.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- Block Transfer. -->
+    <div class="columns is-centered">
+
+      <!-- train. -->
+      <div class="column">
+        <div class="content">
+          <video id="Block-train" autoplay muted loop playsinline height="100%">
+            <source src="./static/videos/Block_view_train.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+      <!-- view 1. -->
+      <div class="column">
+        <div class="content">
+          <video id="Block-view1" autoplay muted loop playsinline height="100%">
+            <source src="./static/videos/Block_view_1.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+      <!-- view 2. -->
+      <div class="column">
+        <div class="content">
+          <video id="Block-view2" autoplay muted loop playsinline height="100%">
+            <source src="./static/videos/Block_view_2.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+    </div>
+    <!--/ Viewpoint Robustness. -->
 
 
     <!-- Acknowledgment. -->
